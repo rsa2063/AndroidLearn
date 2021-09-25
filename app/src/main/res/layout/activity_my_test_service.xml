@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_test_service"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="android.rsa.androidlearn.activity.MyTestServiceActivity">
+
+    <Button
+        android:text="Start Service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_start_service"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="stop service"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_stop_service"
+        android:layout_below="@+id/button_start_service"
+        android:layout_alignEnd="@+id/button_start_service" />
+
+    <Button
+        android:text="bind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_stop_service"
+        android:layout_alignEnd="@+id/button_stop_service"
+        android:layout_marginEnd="11dp"
+        android:layout_marginTop="14dp"
+        android:id="@+id/button_bind" />
+
+    <Button
+        android:text="unbind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_bind"
+        android:layout_alignStart="@+id/button_bind"
+        android:layout_marginTop="27dp"
+        android:id="@+id/button_unbind" />
+
+    <Button
+        android:text="count++"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button_stop_service"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="22dp"
+        android:id="@+id/button_add" />
+
+    <Button
+        android:text="show count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button_bind"
+        android:layout_alignStart="@+id/button_add"
+        android:layout_marginTop="18dp"
+        android:id="@+id/button_show_count" />
+
+    <Button
+        android:text="Call Notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_unbind"
+        android:layout_alignStart="@+id/button_show_count"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="11dp"
+        android:id="@+id/button_notify"
+        android:textAllCaps="false"
+        android:onClick="onClick (MyTestServiceActivity)"/>
+</RelativeLayout>

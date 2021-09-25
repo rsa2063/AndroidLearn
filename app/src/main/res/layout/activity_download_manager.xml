@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_download_manager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="android.rsa.androidlearn.activity.DownloadManagerActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginTop="31dp"
+        android:id="@+id/inputUrl"/>
+
+    <TextView
+        android:text="The Url of File"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/inputUrl"
+        android:layout_toStartOf="@+id/inputUrl"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/labelUrl"/>
+
+    <Button
+        android:text="Download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/inputUrl"
+        android:layout_marginBottom="42dp"
+        android:id="@+id/buttonDownload"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:text="Get Download Info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:id="@+id/button_get_download_info"
+        android:textAllCaps="false"
+        android:layout_alignBaseline="@+id/buttonDownload"
+        android:layout_alignBottom="@+id/buttonDownload"
+        android:layout_toEndOf="@+id/buttonDownload"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_remove_download"
+        android:textAllCaps="false"
+        android:text="Remove Download"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+</RelativeLayout>

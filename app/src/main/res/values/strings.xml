@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AndroidLearn</string>
+    <string name="other_key">对方公钥：</string>
+    <string name="input_key">input your friends public key here</string>
+    <string name="other_ip">对方ip：</string>
+    <string name="ip_hint">input ip here</string>
+    <string name="ip_default">192.168.159.</string>
+    <string name="ip_set">设置公钥及IP</string>
+    <string name="msg">type something here</string>
+    <string name="send">send</string>
+</resources>
